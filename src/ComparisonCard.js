@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles/ComparisonCard.css';
+import PropTypes from 'prop-types';
 
 
-const ComparisonCard = ({ schoolRepository, comparedSchools } ) => {
-  
+const ComparisonCard = ({ schoolRepository, comparedSchools } ) => { 
   const { findAverage, compareDistrictAverages } = schoolRepository;
   const schoolOneAvg = findAverage(comparedSchools[0]);
   const schoolTwoAvg = findAverage(comparedSchools[1]);
@@ -19,7 +19,11 @@ const ComparisonCard = ({ schoolRepository, comparedSchools } ) => {
       <h2 className="school-avg">Mystery Data Avg: {schoolTwoAvg}</h2>
     </div>
   );
+};
 
+ComparisonCard.propTypes = {
+  schoolRepository: PropTypes.object,
+  comparedSchools: PropTypes.object
 };
 
 export default ComparisonCard;

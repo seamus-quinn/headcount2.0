@@ -12,9 +12,9 @@ const TableRow = ( {year, yearData, className} ) => {
 };
 
 TableRow.propTypes = {
-  year: PropTypes.string.isRequired,
-  yearData: PropTypes.number.isRequired,
-  className: PropTypes.string.isRequired
+  year: PropTypes.string,
+  yearData: PropTypes.number,
+  className: PropTypes.string
 };
 
 export default TableRow;

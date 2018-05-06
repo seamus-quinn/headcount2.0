@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import SearchField from '../../SearchField';
 import { shallow, mount } from 'enzyme';
 
-describe('SearchField component', ()=>{
+describe('SearchField component', () => {
   let wrapper;
   let mockSearchSchools;
 
-  beforeEach('', ()=>{
-    wrapper = shallow(<SearchField />);
+  beforeEach(()=>{
     mockSearchSchools = jest.fn();
+    wrapper = shallow(<SearchField searchSchools={mockSearchSchools}/>); 
   });
 
-  it('should match snapshot',()=>{
+  it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -28,10 +28,17 @@ describe('SearchField component', ()=>{
 
   it('updates state when handleSearch is called', () => {
     const mockEvent = {target: {value: 'l'}};
+
     wrapper.instance().handleSearch(mockEvent);
 
-    expect(wrapper.state('inputValue')).toBe(mockEvent);
+    expect(wrapper.state('inputValue')).toBe(mockEvent.target.value);
   });
 
-});
+  it('should call searchSchools when handleSearch is called', () => {
+    const mockEvent = {target: {value: 'l'}};
 
+    wrapper.instance().handleSearch(mockEvent);
+
+    expect(mockSearchSchools).toHaveBeenCalled();
+  });
+});
