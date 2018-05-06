@@ -16,6 +16,7 @@ const ComparisonContainer = ({ comparedSchools, schoolData, schoolRepository, up
       <Card 
         cardData={cardOneData}
         updateComparedSchools={updateComparedSchools} 
+        className="card border"
       />
 
       {comparedSchools.length === 2 &&
@@ -27,6 +28,7 @@ const ComparisonContainer = ({ comparedSchools, schoolData, schoolRepository, up
           <Card
             cardData={cardTwoData}
             updateComparedSchools={updateComparedSchools}
+            className="card border"
           />
         </div>}
 
