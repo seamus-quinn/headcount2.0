@@ -49,8 +49,9 @@ const Card = ({ cardData, updateComparedSchools, className }) => {
 };
 
 Card.propTypes = {
-  cardData: PropTypes.object.isRequired,
-  updateComparedSchools: PropTypes.func
+  cardData: PropTypes.object,
+  updateComparedSchools: PropTypes.func,
+  className: PropTypes.string
 
 };
 

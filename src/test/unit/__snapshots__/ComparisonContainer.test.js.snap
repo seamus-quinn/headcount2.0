@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComparisonContainer matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ComparisonContainer
+    comparedSchools={
+        Array [
+            "COLORADO",
+            "ACADEMY 20",
+          ]
+    }
+    schoolData={
+        Object {
+            "COLORADO": Object {
+              "location": "COLORADO",
+              "stats": Object {
+                "2003": 0.021,
+              },
+            },
+          }
+    }
+    schoolRepository={undefined}
+    updateComparedSchools={undefined}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          cardData={
+                    Object {
+                              "location": "COLORADO",
+                              "stats": Object {
+                                "2003": 0.021,
+                              },
+                            }
+          }
+          className="card border"
+          updateComparedSchools={undefined}
+/>,
+        <div>
+          <ComparisonCard
+                    comparedSchools={
+                              Array [
+                                        "COLORADO",
+                                        "ACADEMY 20",
+                                      ]
+                    }
+                    schoolRepository={undefined}
+          />
+          <Card
+                    cardData={undefined}
+                    className="card border"
+                    updateComparedSchools={undefined}
+          />
+</div>,
+      ],
+      "className": "compare-wrapper",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "cardData": Object {
+            "location": "COLORADO",
+            "stats": Object {
+              "2003": 0.021,
+            },
+          },
+          "className": "card border",
+          "updateComparedSchools": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ComparisonCard
+              comparedSchools={
+                            Array [
+                                          "COLORADO",
+                                          "ACADEMY 20",
+                                        ]
+              }
+              schoolRepository={undefined}
+/>,
+            <Card
+              cardData={undefined}
+              className="card border"
+              updateComparedSchools={undefined}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "comparedSchools": Array [
+                "COLORADO",
+                "ACADEMY 20",
+              ],
+              "schoolRepository": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "cardData": undefined,
+              "className": "card border",
+              "updateComparedSchools": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            cardData={
+                        Object {
+                                    "location": "COLORADO",
+                                    "stats": Object {
+                                      "2003": 0.021,
+                                    },
+                                  }
+            }
+            className="card border"
+            updateComparedSchools={undefined}
+/>,
+          <div>
+            <ComparisonCard
+                        comparedSchools={
+                                    Array [
+                                                "COLORADO",
+                                                "ACADEMY 20",
+                                              ]
+                        }
+                        schoolRepository={undefined}
+            />
+            <Card
+                        cardData={undefined}
+                        className="card border"
+                        updateComparedSchools={undefined}
+            />
+</div>,
+        ],
+        "className": "compare-wrapper",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "cardData": Object {
+              "location": "COLORADO",
+              "stats": Object {
+                "2003": 0.021,
+              },
+            },
+            "className": "card border",
+            "updateComparedSchools": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <ComparisonCard
+                comparedSchools={
+                                Array [
+                                                "COLORADO",
+                                                "ACADEMY 20",
+                                              ]
+                }
+                schoolRepository={undefined}
+/>,
+              <Card
+                cardData={undefined}
+                className="card border"
+                updateComparedSchools={undefined}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "comparedSchools": Array [
+                  "COLORADO",
+                  "ACADEMY 20",
+                ],
+                "schoolRepository": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "cardData": undefined,
+                "className": "card border",
+                "updateComparedSchools": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,26 +1,25 @@
 export default class DistrictRepository {
   constructor(rawSchoolData) {
     this.stats = this.sanitize(rawSchoolData);
-    // this.stats = stats;
   }
 
   sanitize = (schools) => {
     return schools.reduce((acc, schoolObj) => {
-      const key = schoolObj.Location.toUpperCase();
-      if (!acc[key]) {
-        acc[key] = {};
+      const upperCaseLocation = schoolObj.Location.toUpperCase();
+      if (!acc[upperCaseLocation]) {
+        acc[upperCaseLocation] = {};
       }
-      if (acc[key].location !== key) {
-        acc[key].location = key.toUpperCase();
+      if (acc[upperCaseLocation].location !== upperCaseLocation) {
+        acc[upperCaseLocation].location = upperCaseLocation.toUpperCase();
       }
       if (typeof (schoolObj.Data) !== 'number') {
-        acc[key].stats = {
-          ...acc[key].stats,
+        acc[upperCaseLocation].stats = {
+          ...acc[upperCaseLocation].stats,
           [schoolObj.TimeFrame]: 0
         };
       } else {
-        acc[key].stats = {
-          ...acc[key].stats,
+        acc[upperCaseLocation].stats = {
+          ...acc[upperCaseLocation].stats,
           [schoolObj.TimeFrame]: Math.round(1000 * schoolObj.Data) / 1000
         };
       }
@@ -63,7 +62,7 @@ export default class DistrictRepository {
     const schoolValues = Object.values(foundSchool.stats);
 
     const avg = schoolValues.reduce((acc, dataPoint) => {
-      return acc + dataPoint
+      return acc + dataPoint;
     }, 0)/schoolValues.length;
 
     const roundedAvg = Math.round(1000 * avg)/1000;
@@ -79,7 +78,7 @@ export default class DistrictRepository {
       [upperCasedSchool1]: school1Avg,
       [upperCasedSchool2]: school2Avg,
       compared: Math.round(1000 * (school1Avg/school2Avg))/1000
-    }
+    };
     return comparedAvgs;
   }
 }
