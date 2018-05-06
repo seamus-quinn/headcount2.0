@@ -1,3 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardContainer matches snapshot 1`] = `undefined`;
+exports[`CardContainer matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    comparedSchools={
+        Array [
+            "COLORADO",
+            "ACADEMY 20",
+          ]
+    }
+    schoolData={
+        Object {
+            "COLORADO": Object {
+              "location": "COLORADO",
+              "stats": Object {
+                "2003": 0.021,
+              },
+            },
+          }
+    }
+    schoolNames={
+        Array [
+            "COLORADO",
+            "ACADEMY 20",
+          ]
+    }
+    schoolRepository={undefined}
+    updateComparedSchools={undefined}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Array [
+    <Card
+      cardData={
+            Object {
+                  "location": "COLORADO",
+                  "stats": Object {
+                    "2003": 0.021,
+                  },
+                }
+      }
+      className="card border"
+      updateComparedSchools={undefined}
+/>,
+    <Card
+      cardData={undefined}
+      className="card border"
+      updateComparedSchools={undefined}
+/>,
+  ],
+  Symbol(enzyme.__nodes__): Array [
+    Array [
+      <Card
+        cardData={
+                Object {
+                        "location": "COLORADO",
+                        "stats": Object {
+                          "2003": 0.021,
+                        },
+                      }
+        }
+        className="card border"
+        updateComparedSchools={undefined}
+/>,
+      <Card
+        cardData={undefined}
+        className="card border"
+        updateComparedSchools={undefined}
+/>,
+    ],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

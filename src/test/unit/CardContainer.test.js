@@ -1,13 +1,29 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import CardContainer from '../../CardContainer';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('CardContainer', () => {
   let cardContainer;
+  let mockSchoolNames = ['COLORADO', 'ACADEMY 20'];
+  let mockComparedSchools = ['COLORADO', 'ACADEMY 20'];
+  let mockSchoolData = {
+    'COLORADO':
+      {
+        location: 'COLORADO',
+        stats: { 2003: .021 }
+      }
+  };
+  let mockSchoolRepository;
+  let mockUpdateComparedSchools;
 
   beforeEach(() => {
-    cardContainer = shallow(<CardContainer />);
+    cardContainer = shallow(<CardContainer
+      comparedSchools={mockComparedSchools}
+      schoolData={mockSchoolData}
+      schoolRepository={mockSchoolRepository}
+      updateComparedSchools={mockUpdateComparedSchools}
+      schoolNames={mockSchoolNames}
+    />);
   });
 
   it('matches snapshot', () => {
