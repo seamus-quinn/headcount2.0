@@ -73,6 +73,7 @@ class App extends Component {
             className="card-container"
             schoolNames={this.state.schoolNames}
             updateComparedSchools={this.updateComparedSchools}
+            comparedSchools={this.state.comparedSchools}
           />
         </div>
       </div>
