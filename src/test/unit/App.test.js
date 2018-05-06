@@ -61,7 +61,7 @@ describe('App', () => {
       expect(app.state('comparedSchools')).toEqual(expectedState);
     });
 
-    it('should remove matching names from the array',() => {
+    it('should remove matching names from the array', () => {
       let app = shallow(<App />);
       initialState = ['COLORADO'];
       expectedState = [];

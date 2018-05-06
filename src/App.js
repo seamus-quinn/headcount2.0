@@ -37,8 +37,8 @@ class App extends Component {
     const comparedSchools = this.state.comparedSchools;
 
     if (comparedSchools.includes(string)) {
-      comparedSchools.splice(comparedSchools.indexOf(string), 1)
-      this.setState({ comparedSchools })
+      comparedSchools.splice(comparedSchools.indexOf(string), 1);
+      this.setState({ comparedSchools });
     } else if (comparedSchools.length < 2) {
       comparedSchools.push(string);
       this.setState({ comparedSchools });
