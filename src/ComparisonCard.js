@@ -23,7 +23,7 @@ const ComparisonCard = ({ schoolRepository, comparedSchools } ) => {
 
 ComparisonCard.propTypes = {
   schoolRepository: PropTypes.object,
-  comparedSchools: PropTypes.object
+  comparedSchools: PropTypes.array
 };
 
 export default ComparisonCard;
