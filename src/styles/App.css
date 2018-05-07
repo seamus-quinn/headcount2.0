@@ -27,3 +27,27 @@
   padding: 0 60px;
 
 }
+
+@media only screen and (max-width: 725px) {
+  .logo {
+    width: 250px;
+    padding: 40px 0;
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  .nav-head {
+    display: block;
+    padding: 0;
+  }
+
+  .logo {
+    margin: auto;
+    text-align: center;
+    display: block;
+  }
+
+  .wrapper {
+    padding: 60px 15px 40px 15px;
+  }
+}

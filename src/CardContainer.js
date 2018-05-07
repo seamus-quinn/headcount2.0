@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import './styles/CardContainer.css';
+import PropTypes from 'prop-types';
 
 const CardContainer = ({
   schoolData,
@@ -28,6 +29,13 @@ const CardContainer = ({
     }
   });
   return cards;
+};
+
+CardContainer.propTypes = {
+  schoolData: PropTypes.object,
+  schoolNames: PropTypes.array,
+  updateComparedSchools: PropTypes.func,
+  comparedSchools: PropTypes.array
 };
 
 export default CardContainer;
