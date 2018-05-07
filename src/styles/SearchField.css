@@ -20,3 +20,24 @@ input:focus {
   0 0 8px rgba(224, 164, 164, 0.6);
   outline: 0 none;
 }
+
+@media only screen and (max-width: 900px) {
+  .user-input {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  .search-form {
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+ 
+  .user-input {
+    width: 66%;
+    margin-bottom: 20px;
+    margin: auto;
+    display: block;
+  }
+}
