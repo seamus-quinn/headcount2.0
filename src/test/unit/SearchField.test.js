@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import SearchField from '../../SearchField';
 import { shallow, mount } from 'enzyme';
+var spyOn;
 
 describe('SearchField component', () => {
   let wrapper;

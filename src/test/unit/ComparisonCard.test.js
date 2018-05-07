@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import ComparisonCard from  '../../ComparisonCard';
+import { mount } from 'enzyme';
+import ComparisonCard from '../../ComparisonCard';
 
 describe('ComparisonCard', () => {
   let comparisonCard;
@@ -19,34 +19,15 @@ describe('ComparisonCard', () => {
         compareDistrictAverages: jest.fn()
       }}
       comparedSchools={['COLORADO', 'ACADEMY 20']}
-       />)
-  })
+    />);
+  });
 
   it('should match snapshot', () => {
 
     // let mockComparisonInfo = { compared: 0 }
 
-    wrapper.instance().find('.comparison').text(0)
+    comparisonCard.instance().find('.comparison').text(0);
 
     expect(comparisonCard).toMatchSnapshot();
-  })
+  });
 });
-
-
-
-
-
-
-
-
-
-
-// let mockComparisonInfo = { compared: 2 }
-
-// let mockSchoolRepository = {
-//   findAverage: jest.fn(),
-//   compareDistrictAverages: jest.fn()
-// };
-
-// let comparisonCard = mount(<ComparisonCard schoolRepository={mockSchoolRepository} comparedSchools={mockSchoolRepository} />);
-
