@@ -1,5 +1,8 @@
 ![alternativetext](./images/wireframe.png)
-![alternativetext](./images/wireframe.png)
+![alternativetext](./images/landingsketch.png)
+![alternativetext](./images/comparesketch.png)
+![alternativetext](./images/final.png)
+
 
 # HeadCount 2.0
 
